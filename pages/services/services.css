@@ -1,0 +1,275 @@
+/* Interactive Services Section */
+.services-interactive {
+  padding: 4rem 0;
+  /* background: var(--color-surface); */
+}
+
+.services-interactive__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-interactive__title {
+  font-family: var(--font-serif-accent);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.services-interactive__title-accent {
+  color: var(--color-primary);
+}
+
+.services-interactive__subtitle {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-interactive__content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Sidebar */
+.services-sidebar {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid transparent;
+}
+
+.service-item:hover {
+  background: rgba(12, 65, 96, 0.05);
+  border-left-color: var(--color-primary);
+}
+
+.service-item.active {
+  background: rgba(12, 65, 96, 0.1);
+  border-left-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.service-item__icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.service-item.active .service-item__icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.service-item__title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+/* Right Content Area */
+.services-main {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 2.5rem;
+  min-height: 500px;
+}
+
+.service-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.service-content.active {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-content__title {
+  font-family: var(--font-serif-accent);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.service-content__description {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+  margin-top: 0;
+}
+
+.service-content__image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  height: 100%;
+  min-height: 300px;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-interactive__content {
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+  }
+  
+  .services-sidebar {
+    padding: 1.25rem;
+  }
+  
+  .service-item {
+    padding: 0.875rem 1rem;
+  }
+  
+  .services-main {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-interactive__content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .services-sidebar {
+    position: static;
+    order: 1;
+  }
+  
+  .services-main {
+    order: 2;
+    padding: 1.5rem;
+  }
+  
+  .service-content.active {
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+  }
+  
+  .services-interactive__title {
+    font-size: 2rem;
+  }
+  
+  .service-content__title {
+    font-size: 1.75rem;
+  }
+  
+  .service-content__description {
+    font-size: 1rem;
+  }
+  
+  .service-content__image {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-interactive {
+    padding: 3rem 0;
+  }
+  
+  .services-interactive__header {
+    margin-bottom: 2rem;
+  }
+  
+  .services-interactive__title {
+    font-size: 1.75rem;
+  }
+  
+  .services-interactive__subtitle {
+    font-size: 1rem;
+  }
+  
+  .services-sidebar {
+    padding: 1rem;
+  }
+  
+  .service-item {
+    padding: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .service-item__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .service-item__title {
+    font-size: 0.9rem;
+  }
+  
+  .services-main {
+    padding: 1.25rem;
+  }
+  
+  .service-content.active {
+    gap: 1rem;
+  }
+  
+  .service-content__title {
+    font-size: 1.5rem;
+  }
+  
+  .service-content__description {
+    font-size: 0.95rem;
+  }
+  
+  .service-content__image {
+    min-height: 200px;
+  }
+}

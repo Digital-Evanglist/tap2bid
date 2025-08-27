@@ -53,6 +53,19 @@
   document.addEventListener("DOMContentLoaded", () => {
     initNavbarToggle();
     setCurrentYear();
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector('.navbar__toggle');
+  const navbar = document.querySelector('.navbar');
+  if (navToggle && navbar) {
+    navToggle.addEventListener('click', function () {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navbar.classList.toggle('navbar--open');
+    });
+  }
+});
   });
 })();
 

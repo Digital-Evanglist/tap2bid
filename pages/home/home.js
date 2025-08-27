@@ -442,6 +442,43 @@ document.addEventListener("DOMContentLoaded", () => {
     enhanceMovingElements();
     initInteractiveCards();
   }
+
+
+  // Interactive Why Choose Accordion
+  document.querySelectorAll('.why-choose__card').forEach((card, idx, cards) => {
+    card.addEventListener('click', function(e) {
+      // Only expand if not already expanded
+      if (this.getAttribute('aria-expanded') !== 'true') {
+        cards.forEach(c => {
+          c.setAttribute('aria-expanded', 'false');
+        });
+        this.setAttribute('aria-expanded', 'true');
+      } else {
+        this.setAttribute('aria-expanded', 'false');
+      }
+    });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.click();
+      }
+      // Arrow navigation
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        cards[(idx + 1) % cards.length].focus();
+      }
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        cards[(idx - 1 + cards.length) % cards.length].focus();
+      }
+    });
+    // Set first card expanded by default
+    if (idx === 0) card.setAttribute('aria-expanded', 'true');
+    else card.setAttribute('aria-expanded', 'false');
+  });
+
+
+  
 });
 
 
