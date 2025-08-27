@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TapToBid • Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Icons: Font Awesome CDN (topbar) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- Icons: Remix Icon (line icons for services) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Top contact bar -->
+      <div class="topbar">
+        <div class="topbar__inner">
+          <div class="topbar__group">
+            <span class="topbar__item"><i class="fa-solid fa-phone icon icon--sm" aria-hidden="true"></i> (346) 660-2440</span>
+            <span class="topbar__sep" aria-hidden="true"></span>
+            <a class="topbar__item" href="mailto:info@taptobid.com"><i class="fa-regular fa-envelope icon icon--sm" aria-hidden="true"></i> info@taptobid.com</a>
+          </div>
+          <div class="topbar__group">
+            <span class="topbar__item">Follow Us</span>
+            <span class="topbar__sep" aria-hidden="true"></span>
+            <a class="topbar__item" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in icon icon--sm" aria-hidden="true"></i></a>
+            <a class="topbar__item" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f icon icon--sm" aria-hidden="true"></i></a>
+            <span class="topbar__sep" aria-hidden="true"></span>
+            <span class="topbar__item"><i class="fa-solid fa-phone icon icon--sm" aria-hidden="true"></i> 0455 843 274</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main navigation (white) -->
+      <nav class="navbar navbar--light">
+        <div class="navbar__inner">
+          <div class="navbar__brand"><a href="./home.html">TapToBid</a></div>
+          <button class="navbar__toggle" data-nav-toggle aria-label="Toggle navigation">Menu</button>
+          <ul class="navbar__links">
+            <li class="navbar__link"><a href="#services">Services</a></li>
+            <li class="navbar__link"><a href="#about">About</a></li>
+            <li class="navbar__link"><a href="#projects">Projects</a></li>
+            <li class="navbar__link"><a href="#contact">Contact</a></li>
+            <li class="navbar__link"><a class="btn btn--primary" href="#quote">Get Quote</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero: Left copy, right media (video with mac-style top bar overlay) -->
+      <section class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              <span>Construction</span>
+              <span class="hero__title-accent">Estimating Services</span>
+              <span>for Precise Project Planning</span>
+            </h1>
+            <ul class="hero__bullets" role="list">
+              <li class="hero__bullet">Any Trade or Any Kind of Project</li>
+              <li class="hero__bullet">Refund Policy (Risk Free)</li>
+              <li class="hero__bullet">Ensure up to 100% Accuracy</li>
+              <li class="hero__bullet">No Hidden Charges</li>
+            </ul>
+            <div class="hero__actions">
+              <a href="#estimate" class="btn btn--primary">Reduce Your Estimating Expenses Upto 30%</a>
+            </div>
+          </div>
+
+          <aside class="hero__media" aria-label="Project plan demo video">
+            <div class="mock-browser">
+              <img class="mock-browser__topbar" src="../../assets/img/hero-video-topbar.png" alt="Browser top bar" />
+              <div class="mock-browser__viewport">
+                <video class="hero__video" src="../../assets/vid/hero-video.mp4" autoplay muted loop playsinline></video>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <div class="container">
+          <header class="services__header text-center">
+            <h2 class="services__title">
+              Our Construction Estimating <span class="services__title-accent">Services</span>
+            </h2>
+            <p class="services__subtitle muted">Whether you're a general Contractor, Subcontractor, Lender, Builder, Architect, Engineering Firm, or Vendor, we cater to all your estimating needs.</p>
+          </header>
+
+          <div class="services__grid">
+            <!-- Card 1 -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-money-dollar-circle-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Cost Estimating <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Wide range of construction cost estimating services and cost management solutions tailored to meet the unique needs of the ever‑growing industry.</p>
+            </article>
+
+            <!-- Card 2 Active -->
+            <article class="service-card service-card--active">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-draft-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Material Takeoff <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Accurate takeoffs creating a solid foundation for bidding by analyzing drawings, sketches, and project specifications.</p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-home-4-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Residential Estimating <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Comprehensive estimates for diverse residential endeavors, backed by a strong track record.</p>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-building-4-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Commercial Estimating <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Accurate and efficient commercial estimating services with a precise and detailed approach.</p>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-community-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Industrial Estimating <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Professional industrial estimating to improve accuracy and save time with comprehensive quantity takeoffs.</p>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-pencil-ruler-2-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">
+                Preliminary Estimates <a class="service-card__link" href="../services/services.html">Services</a>
+              </h3>
+              <p class="service-card__text muted">Early‑stage estimates that reduce uncertainty and help plan projects with confidence.</p>
+            </article>
+
+            <!-- Card 7 (View All Services CTA instead of subscription) -->
+            <article class="service-card service-card--cta">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-apps-2-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">Explore Our Full List of <span class="services__title-accent">Services</span></h3>
+              <p class="service-card__text muted">Browse the complete catalog of estimating offerings tailored to your trade.</p>
+              <a class="btn btn--primary" href="../services/services.html">View All Services</a>
+            </article>
+
+            <!-- Card 8 (Keep accurate estimate style CTA) -->
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true"><i class="ri-focus-2-line icon icon--lg"></i></div>
+              <h3 class="service-card__title">Want An <span class="services__title-accent">Accurate</span> Estimate?</h3>
+              <p class="service-card__text muted">Transform your vision into tangible results with precise estimating support.</p>
+              <a class="btn btn--ghost" href="#quote">Contact Us</a>
+            </article>
+          </div>
+
+          <p class="services__faq text-center muted" style="margin-top: var(--space-lg);">
+            Have specific questions about our services? Check out our <a href="../faqs/faqs.html">FAQs page</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Why Choose Section -->
+      <section class="why-choose">
+        <div class="why-choose__container">
+          <div class="why-choose__content">
+            <h2 class="why-choose__title">
+              Why Choose <span class="why-choose__highlight">Construct Estimates?</span>
+            </h2>
+            <p class="why-choose__subtitle">
+              We stand out from the competition regarding material takeoff and construction estimating services. Here’s why:
+            </p>
+            <img src="../../assets/img/why.webp" alt="Modern building" class="why-choose__image">
+          </div>
+          <div class="why-choose__stack">
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Trust in Accurate Estimates</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  At Construct Estimates, we deliver precise and dependable construction cost estimates. Our meticulous analysis and attention to detail ensure accurate projections, mitigating the risk of unexpected expenses and delays. Trust us for reliable estimates that provide a solid foundation for successful project planning and execution.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Save Time and Money</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  Our efficient processes and expert estimators help you avoid costly mistakes and reduce project delays, saving both time and money.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Certified Estimators</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  Our team consists of certified professionals with years of industry experience, ensuring accuracy and reliability in every estimate.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Meet Your Deadlines</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  We understand the importance of timelines and deliver estimates promptly to keep your project on track.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Competitive Pricing</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  Get top-quality estimating services at competitive rates, maximizing value for your investment.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Customized Solutions</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  We tailor our services to fit your unique project requirements, ensuring you get exactly what you need.
+                </p>
+              </div>
+            </article>
+            <article class="why-choose__card">
+              <div class="why-choose__card-header">
+                <h3 class="why-choose__card-title">Exceptional Customer Support</h3>
+              </div>
+              <div class="why-choose__card-content">
+                <p class="why-choose__card-desc">
+                  Our dedicated support team is always available to assist you throughout your project journey.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action: Next Step Section -->
+      <section class="cta-next-step">
+        <div class="cta-next-step__container">
+          <div class="cta-next-step__content">
+            <h2 class="cta-next-step__title">Ready to Take the Next Step?</h2>
+            <p class="cta-next-step__subtitle">
+              Contact us today to get started on your construction projects and experience the difference of working with Construct Estimates.
+            </p>
+          </div>
+          <a href="#quote" class="cta-next-step__btn btn">
+            Tap<bold>2</bold>Bid <span class="cta-next-step__icon"><i class="fa-regular fa-circle-right"></i>→</span>
+          </a>
+          <svg class="cta-next-step__arrow" width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 50 Q60 10 110 30 Q160 50 210 10" stroke="#fff" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+            <polygon points="210,10 202,14 204,6" fill="#fff"/>
+            <polygon points="10,50 18,46 16,54" fill="#fff"/>
+          </svg>
+          <div class="cta-next-step__circle cta-next-step__circle--left"></div>
+          <div class="cta-next-step__circle cta-next-step__circle--right"></div>
+        </div>
+      </section>
+
+
+     
+      <!-- Feature Cards Section -->
+      <section class="feature-cards">
+        <div class="container">
+          <h2 class="feature-cards__title">
+            Outrank Your Competitors with<br>
+            Accurate <span class="feature-cards__title-accent">Construction Estimates</span>
+          </h2>
+          <p class="feature-cards__subtitle">
+            Don't let estimating expenses hold you back. Our cost-effective solutions and industry expertise allow you to bid more confidently, secure more contracts, and grow your business. Our team of experts is ready to assist you in optimizing your bidding process, winning more projects, and maximizing your profitability.
+          </p>
+          <div class="feature-cards__grid">
+            <article class="feature-card">
+              <div class="feature-card__inner">
+                <div class="feature-card__front">
+                  <div class="feature-card__badge">01</div>
+                  <h3 class="feature-card__heading">Our Commitment to Your Success</h3>
+                </div>
+                <div class="feature-card__back">
+                  <div class="feature-card__badge">01</div>
+                  <h3 class="feature-card__heading">Our Commitment to Your Success</h3>
+                  <p class="feature-card__desc">
+                    We go beyond estimating by offering consulting services to help you negotiate and close deals effectively. Our experienced team can work with you to develop winning strategies, advise you during negotiations, and even join conference calls.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__inner">
+                <div class="feature-card__front">
+                  <div class="feature-card__badge">02</div>
+                  <h3 class="feature-card__heading">Time-Saving Solutions for Busy Contractors</h3>
+                </div>
+                <div class="feature-card__back">
+                                    <div class="feature-card__badge">02</div>
+                  <h3 class="feature-card__heading">Time-Saving Solutions for Busy Contractors</h3>
+                  <p class="feature-card__desc">
+                    Don't let a lack of resources or time hinder your success. Many contractors lose significant money each month due to insufficient construction estimation capabilities. No more spending nights and weekends at the kitchen table trying to estimate projects.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__inner">
+                <div class="feature-card__front">
+                  <div class="feature-card__badge">03</div>
+                  <h3 class="feature-card__heading">Save Big with Our Monthly Takeoff Package!</h3>
+                </div>
+                <div class="feature-card__back">
+                                    <div class="feature-card__badge">03</div>
+                  <h3 class="feature-card__heading">Save Big with Our Monthly Takeoff Package!</h3>
+                  <p class="feature-card__desc">
+                    With our reliable construction takeoff services at your fingertips, you can confidently bid on more projects and increase your chances of winning. Imagine the time and money you’ll save by outsourcing your estimating needs to our expert team.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+
+            <!-- Call to Action: Next Step Section -->
+            <section class="cta-next-step">
+              <div class="cta-next-step__container">
+                <div class="cta-next-step__content">
+                  <h2 class="cta-next-step__title">Worried About Managing Bids</h2>
+                  <p class="cta-next-step__subtitle">
+                    Construct Estimates is working closely with Bidding Platforms to keep our clients Updated for all of the Projects Coming up in their Areas. Contact us to make your Bidding problems solved with our
+                  </p>
+                </div>
+                <a href="#quote" class="cta-next-step__btn btn">
+                  Bid Management Services <span class="cta-next-step__icon"><i class="fa-regular fa-circle-right"></i>→</span>
+                </a>
+                <svg class="cta-next-step__arrow" width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M10 50 Q60 10 110 30 Q160 50 210 10" stroke="#fff" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+                  <polygon points="210,10 202,14 204,6" fill="#fff"/>
+                  <polygon points="10,50 18,46 16,54" fill="#fff"/>
+                </svg>
+                <div class="cta-next-step__circle cta-next-step__circle--left"></div>
+                <div class="cta-next-step__circle cta-next-step__circle--right"></div>
+              </div>
+            </section>
+
+
+
+             <!-- Interactive Services Section -->
+      <section class="services-interactive">
+        <div class="container">
+          <div class="services-interactive__header">
+            <h2 class="services-interactive__title">
+              Construction <span class="services-interactive__title-accent">TakeOff Services</span>
+            </h2>
+            <p class="services-interactive__subtitle">
+              We specialize in providing construction takeoff services that support contractors in accurately estimating costs and quantities.
+            </p>
+          </div>
+          
+          <div class="services-interactive__content">
+            <!-- Left Sidebar -->
+            <div class="services-sidebar">
+              <div class="service-item active" data-service="concrete">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-shovel"></i>
+                </div> -->
+                <span><img alt="Concrete Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Concrete-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3ODozMzU=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Concrete-Estimating.svg"></span>
+                <span class="service-item__title">Concrete Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="electrical">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-bolt"></i>
+                </div> -->
+                <span><img alt="Electric Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/sitework.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjY=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/sitework.svg"></span>
+                <span class="service-item__title">Electrical Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="finishes">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-couch"></i>
+                </div> -->
+                <span><img alt="Interior & Exterior Finishes" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Interior-and-Exterior-Finishes.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/interior.svg"></span>
+                <span class="service-item__title">Interior & Exterior Finishes</span>
+              </div>
+              
+              <div class="service-item" data-service="masonry">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-bricks"></i>
+                </div> -->
+                <span><img alt="Masonry Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Masonry-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/masonry.svg"></span>
+                <span class="service-item__title">Masonry Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="mep">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-wrench"></i>
+                </div> -->
+                <span><img alt="MEP Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/MEP-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/mep.svg"></span>
+                <span class="service-item__title">MEP Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="metal">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-layer-group"></i>
+                </div> -->
+                <span><img alt="Metal Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Metal-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/metal.svg"></span>
+                <span class="service-item__title">Metal Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="openings">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-door-open"></i>
+                </div> -->
+                <span><img alt="Openings Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Openings-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/opening.svg"></span>
+                <span class="service-item__title">Openings Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="sitework">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-truck"></i>
+                </div> -->
+                <span><img alt="Sitework Estimating" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Sitework-Estimating.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/sitework.svg"></span>
+                <span class="service-item__title">Sitework Estimating</span>
+              </div>
+              
+              <div class="service-item" data-service="thermal">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div> -->
+                <span><img alt="Thermal/Moisture Protection" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Thermal-and-Moisture-Protection.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/thermal.svg"></span>
+                <span class="service-item__title">Thermal/Moisture Protection</span>
+              </div>
+              
+              <div class="service-item" data-service="lumber">
+                <!-- <div class="service-item__icon">
+                  <i class="fas fa-tree"></i>
+                </div> -->
+                <span><img alt="Lumber Takeoff" nitro-lazy-src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/Lumber-Takeoff.svg" class="lazyloaded" decoding="async" nitro-lazy-empty="" id="MTY3OTozMjA=-1" src="https://cdn-ildphpj.nitrocdn.com/IBopuCXhtVImskucYgCJeBBHKfYMVZHL/assets/images/optimized/rev-ef89c72/constructestimates.com/wp-content/uploads/2023/07/lumber.svg"></span>
+                <span class="service-item__title">Lumber Takeoff</span>
+              </div>
+            </div>
+            
+            <!-- Right Content Area -->
+            <div class="services-main">
+              <div class="service-content active" data-service="concrete">
+                <h3 class="service-content__title">Concrete Estimating</h3>
+                <p class="service-content__description">
+                  Our concrete estimating services are designed to support contractors in accurately estimating the costs and quantities related to concrete construction. Our expert team provides thorough and reliable takeoffs and estimates, whether it's foundations, slabs, driveways, or parking lots. With the highest bid-winning ratio and utilizing advanced software such as Bluebeam, Planswift, and Accubid, we ensure high accuracy in our estimates. By partnering with us, you can enhance your chances of securing projects and optimizing your construction budget.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/concrete-estimating.jpg" alt="Concrete construction site with workers" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="electrical">
+                <h3 class="service-content__title">Electrical Estimating</h3>
+                <p class="service-content__description">
+                  Our electrical estimating services cover various requirements, from low voltage to instrumentation and control systems. Our team of professional electrical estimators, electronic engineers, and industrial electronics professionals bring their expertise and experience to provide accurate and detailed estimates. We offer customized solutions, including material and labor takeoffs, design support, budgeting, and value engineering. With proficiency in industry-leading software like ConEst, Planswift, Accubid, and Bluebeam, we deliver precise estimates that contribute to your bidding success.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/electrical-estimating.webp" alt="Electrical panel installation" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="finishes">
+                <h3 class="service-content__title">Interior & Exterior Finishes</h3>
+                <p class="service-content__description">
+                  We understand the importance of precise estimations for interior and exterior finishes in construction projects at Construct Estimates. Whether it's painting, stucco, plaster, or specialized coatings, our estimating services help contractors win bids and provide accurate pricing to clients. We prioritize accuracy and professionalism to ensure your estimates are reliable and eliminate unnecessary expenses. By outsourcing your estimating needs to us, you can save on in-house costs while benefiting from our commitment to accuracy.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/finishes-estimating.webp" alt="Interior finishing work" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="masonry">
+                <h3 class="service-content__title">Masonry Estimating</h3>
+                <p class="service-content__description">
+                  We understand the importance of precise estimations for interior and exterior finishes in construction projects at Construct Estimates. Whether it’s painting, stucco, plaster, or specialized coatings, our estimating services help contractors win bids and provide accurate pricing to clients. We prioritize accuracy and professionalism to ensure your estimates are reliable and eliminate unnecessary expenses. By outsourcing your estimating needs to us, you can save on in-house costs while benefiting from our commitment to accuracy.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/masonry-estimating.webp" alt="Masonry construction work" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="mep">
+                <h3 class="service-content__title">MEP Estimating</h3>
+                <p class="service-content__description">
+                  We specialize in MEP (Mechanical, Electrical, Plumbing) estimating services, offering contractors a dedicated department of expert estimators. Our MEP estimates cover mechanical, electrical, and plumbing services, including HVAC, sheet metal, ductwork, process piping, and more. With the utilization of specialized software such as Bluebeam, PlanSwift, FastWRAP, FastDuct, FastPIPIE, and Trimble, our certified estimators ensure accuracy and adherence to essential standards. Count on us for comprehensive and precise MEP estimates that meet the complex demands of your projects.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/mep-estimating.webp" alt="MEP system installation" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="metal">
+                <h3 class="service-content__title">Metal Estimating</h3>
+                <p class="service-content__description">
+                  Our metal estimating services encompass structural steel, rebar, and miscellaneous metals. With skilled estimators and engineers, we analyze and audit takeoffs to control construction costs effectively. We accurately quantify decks, trusses, railings, stud framing, joists, and castings, ensuring meticulous attention to detail. By reducing waste and ordering the right amount of materials, our services contribute to a more sustainable environment. Choose us for accurate and timely metal estimating services that help optimize your construction projects.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/metal-estimating.webp" alt="Metal construction work" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="openings">
+                <h3 class="service-content__title">Openings Estimating</h3>
+                <p class="service-content__description">
+                  For precise estimates related to opening frames, doors, and windows, our openings estimates provide detailed information on installation and material costs. Whether it’s aluminum, bronze, vinyl, fiberglass, or metal doors, our estimators calculate labor costs and provide comprehensive bid proposals. Our expertise in the door and frame contractor field enables us to deliver accurate takeoffs for commercial and residential facilities.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/openings-estimating.webp" alt="Door and window installation" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="sitework">
+                <h3 class="service-content__title">Sitework Estimating</h3>
+                <p class="service-content__description">
+                  dirt, earthwork takeoffs, and site utility estimates for excavators and contractors. We provide detailed 3D images, earthwork volumes, and surface grading in our earthwork takeoff services. Additionally, our sitework estimates cover a wide range of elements, including landscaping, concrete driveways, asphalt, foundations, walls, and various types of pavements. By leveraging our experienced estimators and their expertise in software such as Bluebeam, Planswift, and Accubid, we deliver accurate and comprehensive sitework estimates.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/sitework-estimating.webp" alt="Sitework and excavation" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="thermal">
+                <h3 class="service-content__title">Thermal/Moisture Protection</h3>
+                <p class="service-content__description">
+                  , roofing, fire-stopping, caulking, siding, sealants, and insulation. Our estimates serve various purposes, from procurement and material ordering to labor cost calculations and bid proposals. With the expertise of our freelance construction estimators and their use of advanced industry software, we deliver cost estimates that align with your specialized trade requirements.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/thermal-estimating.webp" alt="Thermal protection installation" class="service-image">
+                </div>
+              </div>
+              
+              <div class="service-content" data-service="lumber">
+                <h3 class="service-content__title">Lumber Takeoff</h3>
+                <p class="service-content__description">
+                  For framing contractors, millwork contractors, commercial contractors, and builders, our lumber takeoff services provide precise estimates for millwork and lumber-related elements. Our takeoffs cover a comprehensive range of materials from rough and finished carpentry to wood trusses, cabinetry, countertops, paneling, and laminates. By outsourcing your lumber takeoff needs to us, you can eliminate the costs associated with hiring and training in-house staff while ensuring highly accurate and timely takeoffs. Maximize your chances of securing projects by relying on our expertise in lumber takeoff services.
+                </p>
+                <div class="service-content__image">
+                  <img src="../../assets/img/lumber-estimating.webp" alt="Lumber and wood construction" class="service-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- How to Begin Section -->
+      <section class="how-to-begin">
+        <div class="container">
+          <!-- Enhanced Header with Creative Design -->
+          <div class="section-header">
+            <div class="header-visual">
+              <div class="header-icon">
+                <div class="icon-circle">
+                  <span class="icon-symbol">🏗️</span>
+                </div>
+                <div class="icon-glow"></div>
+              </div>
+            </div>
+            
+            <h2 class="how-to-begin__title">
+              <span class="title-line">How to Begin</span>
+              <span class="title-accent">Construction Estimation</span>
+              <span class="title-subtitle">& Quantity Takeoffs with Us</span>
+            </h2>
+            
+            <div class="title-decoration">
+              <div class="decoration-line"></div>
+              <div class="decoration-dot"></div>
+              <div class="decoration-line"></div>
+            </div>
+          </div>
+          
+          <div class="how-to-begin__content">
+            <!-- Left Side - Redesigned Image Section -->
+            <div class="how-to-begin__images">
+              <div class="image-showcase">
+                <!-- Main Image with Professional Worker -->
+                <div class="main-image-container">
+                  <img src="../../assets/img/hardhat-laptop.webp" alt="Professional construction worker using tablet for estimation" class="main-image">
+                  <div class="image-frame">
+                    <div class="frame-corner frame-corner--tl"></div>
+                    <div class="frame-corner frame-corner--tr"></div>
+                    <div class="frame-corner frame-corner--bl"></div>
+                    <div class="frame-corner frame-corner--br"></div>
+                  </div>
+                </div>
+                
+                <!-- Feature Badges - Fixed Position -->
+                <div class="feature-badges">
+                  <div class="feature-badge feature-badge--precision">
+                    <div class="badge-content">
+                      <div class="badge-icon">🎯</div>
+                      <div class="badge-text">
+                        <span class="badge-title">Precision</span>
+                        <span class="badge-desc">Accurate estimates</span>
+                      </div>
+                    </div>
+                    <div class="badge-arrow"></div>
+                  </div>
+                  
+                  <div class="feature-badge feature-badge--fast">
+                    <div class="badge-content">
+                      <div class="badge-icon">⚡</div>
+                      <div class="badge-text">
+                        <span class="badge-title">Fast</span>
+                        <span class="badge-desc">Quick turnaround</span>
+                      </div>
+                    </div>
+                    <div class="badge-arrow"></div>
+                  </div>
+                  
+                  <div class="feature-badge feature-badge--quality">
+                    <div class="badge-content">
+                      <div class="badge-icon">💎</div>
+                      <div class="badge-text">
+                        <span class="badge-title">Quality</span>
+                        <span class="badge-desc">Professional service</span>
+                      </div>
+                    </div>
+                    <div class="badge-arrow"></div>
+                  </div>
+                </div>
+                
+                <!-- Decorative Elements -->
+                <div class="image-decorations">
+                  <div class="decoration-circle decoration-circle--1"></div>
+                  <div class="decoration-circle decoration-circle--2"></div>
+                  <div class="decoration-line decoration-line--1"></div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Side - Enhanced Steps with Better Layout -->
+            <div class="how-to-begin__steps">
+              <div class="steps-container">
+                <div class="step-item" data-step="1">
+                  <div class="step-visual">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📋</div>
+                  </div>
+                  <div class="step-content">
+                    <h3 class="step-title">Submit Your Drawing Plans</h3>
+                    <p class="step-description">
+                      Upload your plans in various formats including PDF through our user-friendly platform, contact page, or email us at info@constructestimates.com. Provide essential project scope and details for accurate estimation.
+                    </p>
+                    <a href="#upload" class="step-button">
+                      <span class="button-text">Upload Plans Here!</span>
+                      <span class="button-arrow">→</span>
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="step-item" data-step="2">
+                  <div class="step-visual">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔍</div>
+                  </div>
+                  <div class="step-content">
+                    <h3 class="step-title">We Review The Plans</h3>
+                    <p class="step-description">
+                      Our expert team thoroughly reviews your plans to understand project requirements and scope.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="step-item" data-step="3">
+                  <div class="step-visual">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">💰</div>
+                  </div>
+                  <div class="step-content">
+                    <h3 class="step-title">Get A Quote</h3>
+                    <p class="step-description">
+                      Receive a detailed quote based on our analysis of your project requirements.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="step-item" data-step="4">
+                  <div class="step-visual">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">📊</div>
+                  </div>
+                  <div class="step-content">
+                    <h3 class="step-title">Receive an Estimate</h3>
+                    <p class="step-description">
+                      Get your comprehensive construction estimate with detailed takeoffs and cost analysis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Construction Estimating Projects Section -->
+      <section class="client-projects">
+        <div class="container">
+          <!-- Section Header with Creative Design -->
+          <div class="section-header">
+            <div class="header-content">
+              <h2 class="projects-title">
+                <span class="title-main">Construction Estimating Projects</span>
+                <span class="title-accent">We Did For</span>
+                <span class="title-highlight">Clients</span>
+              </h2>
+              <p class="projects-description">
+                Our mission for construction estimation is to deliver precise and reliable cost assessments, enabling informed decision-making, optimal budgeting, and seamless project execution.
+              </p>
+              <div class="cta-container">
+                <button class="explore-btn">
+                  <span class="btn-text">Explore All Projects</span>
+                  <span class="btn-arrow">→</span>
+                  <div class="btn-shine"></div>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Decorative Elements -->
+            <div class="header-decoration">
+              <div class="decoration-circle decoration-circle--1"></div>
+              <div class="decoration-circle decoration-circle--2"></div>
+              <div class="decoration-line decoration-line--1"></div>
+              <div class="decoration-line decoration-line--2"></div>
+            </div>
+          </div>
+
+          <!-- Projects Gallery with Horizontal Sliding -->
+          <div class="projects-gallery">
+            <div class="gallery-container">
+              <div class="gallery-track">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-project="1">
+                  <div class="card-image">
+                    <img src="../../assets/img/concrete-estimating.jpg" alt="Modern apartment building with balconies" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Luxury Apartments</h3>
+                        <p class="project-type">Residential Complex</p>
+                        <div class="project-stats">
+                          <span class="stat">$2.5M</span>
+                          <span class="stat">45,000 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Multi-story</span>
+                      <span class="tag">Balconies</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-project="2">
+                  <div class="card-image">
+                    <img src="../../assets/img/electrical-estimating.webp" alt="Contemporary interior with lake view" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Lake House</h3>
+                        <p class="project-type">Luxury Residence</p>
+                        <div class="project-stats">
+                          <span class="stat">$1.8M</span>
+                          <span class="stat">8,500 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Glass Walls</span>
+                      <span class="tag">Lake View</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" data-project="3">
+                  <div class="card-image">
+                    <img src="../../assets/img/finishes-estimating.webp" alt="Sleek modern house with swimming pool" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Modern Villa</h3>
+                        <p class="project-type">Custom Home</p>
+                        <div class="project-stats">
+                          <span class="stat">$3.2M</span>
+                          <span class="stat">12,000 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Flat Roof</span>
+                      <span class="tag">Pool</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-project="4">
+                  <div class="card-image">
+                    <img src="../../assets/img/masonry-estimating.webp" alt="Minimalist white house with dark windows" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Minimalist Estate</h3>
+                        <p class="project-type">Architectural Home</p>
+                        <div class="project-stats">
+                          <span class="stat">$2.8M</span>
+                          <span class="stat">9,500 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Minimalist</span>
+                      <span class="tag">Mountain View</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card" data-project="5">
+                  <div class="card-image">
+                    <img src="../../assets/img/mep-estimating.webp" alt="Modern skyscraper with glass facade" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Corporate Tower</h3>
+                        <p class="project-type">Commercial Building</p>
+                        <div class="project-stats">
+                          <span class="stat">$15M</span>
+                          <span class="stat">85,000 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Glass Facade</span>
+                      <span class="tag">High-rise</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Duplicate cards for infinite scroll effect -->
+                <div class="project-card" data-project="1">
+                  <div class="card-image">
+                    <img src="../../assets/img/concrete-estimating.jpg" alt="Modern apartment building with balconies" class="project-img">
+                    <div class="image-overlay">
+                      <div class="overlay-content">
+                        <h3 class="project-name">Luxury Apartments</h3>
+                        <p class="project-type">Residential Complex</p>
+                        <div class="project-stats">
+                          <span class="stat">$2.5M</span>
+                          <span class="stat">45,000 sq ft</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-tags">
+                      <span class="tag">Multi-story</span>
+                      <span class="tag">Balconies</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="gallery-controls">
+              <button class="control-btn control-btn--prev" aria-label="Previous projects">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="control-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+                <button class="dot" data-slide="4"></button>
+              </div>
+              <button class="control-btn control-btn--next" aria-label="Next projects">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Floating Achievement Badges -->
+          <div class="achievement-badges">
+            <div class="badge badge--experience">
+              <div class="badge-icon">🏗️</div>
+              <div class="badge-content">
+                <span class="badge-number">500+</span>
+                <span class="badge-label">Projects</span>
+              </div>
+            </div>
+            <div class="badge badge--clients">
+              <div class="badge-icon">👥</div>
+              <div class="badge-content">
+                <span class="badge-number">200+</span>
+                <span class="badge-label">Clients</span>
+              </div>
+            </div>
+            <div class="badge badge--accuracy">
+              <div class="badge-icon">🎯</div>
+              <div class="badge-content">
+                <span class="badge-number">98%</span>
+                <span class="badge-label">Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+          <div class="container">
+            <!-- Section Header -->
+            <div class="testimonials-header">
+              <div class="header-left">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">
+                  Hear from Our Satisfied Clients
+                  <span class="title-accent">they have well-trained professional staff.</span>
+                  <div class="title-underline"></div>
+                </h2>
+              </div>
+              <div class="header-right">
+                <p class="section-description">
+                  Don't just take our word for it. Hear from our satisfied clients who have experienced the value and quality.
+                </p>
+                <button class="quote-btn">
+                  Get a Quote
+                  <span class="btn-shine"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+              <!-- Left Column - 6 Cards -->
+              <div class="testimonials-column testimonials-column--left">
+                <div class="testimonial-card" data-delay="0">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Bill A.</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    These guys were very attentive to my specific, custom needs for estimating and delivered an excellent product in very timely fashion. I'm looking forward to hiring them again in the near future!
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="1">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Alan Stuckey</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Excellent service all round, fast informative and very professional.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="2">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Sarah Johnson</h4>
+                      <p class="client-title">Project Manager</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Outstanding accuracy and attention to detail. Their estimates have consistently helped us stay within budget and timeline. The team's expertise is unmatched in the industry.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="3">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Michael Chen</h4>
+                      <p class="client-title">General Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Construct Estimates has revolutionized our bidding process. Their detailed breakdowns and accurate cost projections give us the confidence to win more projects while maintaining profitability.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="4">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Jennifer Martinez</h4>
+                      <p class="client-title">Construction Manager</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    As a construction manager, I rely heavily on accurate estimates. Construct Estimates consistently delivers precise calculations that help us maintain quality standards and meet project deadlines.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="5">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Robert Wilson</h4>
+                      <p class="client-title">Site Supervisor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    The level of detail in their estimates is incredible. They consider every aspect of the project, from materials to labor costs, making our planning process much more efficient and accurate.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Center Column -->
+              <div class="testimonials-column testimonials-column--center">
+                <div class="testimonial-card" data-delay="6">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Mark Scheinberg</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    I am very impressed with their ability to deliver accurate estimates consistently. Their attention to detail and professional approach makes them stand out in the industry.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="7">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Scott Adkins</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Scott Adkins and the rest of the team at Construct Estimates. They have been doing my estimates for at least 2 years now and I have no complaints. I have the project board at this moment over 3 million dollars of projects that they have estimated for me.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Column -->
+              <div class="testimonials-column testimonials-column--right">
+                <div class="testimonial-card" data-delay="8">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Allison Dorwart</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Construct Estimates is an exceptional asset to our projects. Despite the rush on some projects, CE demonstrated remarkable dedication, successfully meeting the deadlines without compromising the quality of their output.
+                  </p>
+                </div>
+
+                <div class="testimonial-card" data-delay="9">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <i class="avatar-icon">👤</i>
+                    </div>
+                    <div class="client-info">
+                      <h4 class="client-name">Alex James</h4>
+                      <p class="client-title">Contractor</p>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">
+                    Construct Estimates provide accurate measurements with fast project delivery. Highly recommend.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enhanced Moving Background Elements -->
+          <div class="moving-elements">
+            <div class="moving-element moving-element--1"></div>
+            <div class="moving-element moving-element--2"></div>
+            <div class="moving-element moving-element--3"></div>
+            <div class="moving-element moving-element--4"></div>
+            <div class="moving-element moving-element--5"></div>
+            <div class="moving-element moving-element--6"></div>
+          </div>
+
+          <!-- Floating Quote Marks -->
+          <div class="floating-quotes">
+            <div class="quote-mark quote-mark--1">"</div>
+            <div class="quote-mark quote-mark--2">"</div>
+            <div class="quote-mark quote-mark--3">"</div>
+          </div>
+
+          <!-- Sparkle Effects -->
+          <div class="sparkle-effects">
+            <div class="sparkle sparkle--1">✨</div>
+            <div class="sparkle sparkle--2">⭐</div>
+            <div class="sparkle sparkle--3">💫</div>
+            <div class="sparkle sparkle--4">🌟</div>
+          </div>
+        </section>
+
+
+        <!-- Discuss Section -->
+      <section class="contact-discuss-section">
+        <div class="contact-discuss__container">
+          <div class="contact-discuss__content">
+            <h2 class="contact-discuss__title">
+              Let's Discuss Your Construction<br>Estimating Needs
+            </h2>
+            <p class="contact-discuss__desc">
+              Discover the TapToBid advantage! Take the next step toward accurate estimates and successful projects. <br>
+              Connect with our expert team for tailored solutions, guidance, and a special 30% discount on your first quote. We’re here to answer your questions and help you build with confidence.
+            </p>
+            <button class="btn btn--light contact-discuss__btn">
+              Request Your Discounted Estimate &amp; Save 30% <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div class="contact-discuss__decor">
+            <span class="contact-discuss__arrow"></span>
+            <span class="contact-discuss__circle"></span>
+            <div class="contact-discuss__wave"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-bg-graphic"></div>
+      <div class="container site-footer__container">
+        <div class="site-footer__brand">
+          <img src="../../assets/img/logo-blue.svg" alt="TapToBid Logo" class="site-footer__logo" />
+          <div>
+            <span class="site-footer__brand-title">TapToBid</span>
+            <span class="site-footer__brand-sub">Estimates</span>
+          </div>
+        </div>
+        <p class="site-footer__desc">
+          Essential for precise budgeting and efficient resource allocation in construction projects.
+        </p>
+        <nav class="site-footer__nav">
+          <a href="./home.html">Home</a>
+          <a href="../about/about.html">About Us</a>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../privacy/privacy.html">Privacy Policy</a>
+        </nav>
+        <div class="site-footer__social">
+          <a href="#" aria-label="LinkedIn" class="footer-social__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook" class="footer-social__icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇺🇸</span>
+            <span>2000 Taylor St, Houston, TX 77007, United States</span>
+          </div>
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇦🇺</span>
+            <span>118 Royal Terrace, Craigieburn VIC 3064</span>
+          </div>
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇨🇦</span>
+            <span>2 Simcoe St S #300, Oshawa, ON L1H 8C1, Canada</span>
+          </div>
+        </div>
+        <div class="site-footer__phones">
+          <span><i class="fa-solid fa-phone"></i> (346) 660-2440</span>
+          <span><i class="fa-solid fa-phone"></i> 0455 843 274</span>
+          <span><i class="fa-solid fa-phone"></i> (365) 607-7238</span>
+        </div>
+        <div class="site-footer__copyright">
+          <span>© <span data-current-year></span>. All rights reserved – TapToBid</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Animate year
+      document.querySelectorAll('[data-current-year]').forEach(el => {
+        el.textContent = new Date().getFullYear();
+      });
+    </script>
+    <script src="../../assets/js/base.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>
+
+
+
+

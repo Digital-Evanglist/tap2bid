@@ -1,0 +1,449 @@
+/* Hero Section */
+.getquote-hero {
+  background: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+.getquote-hero__title {
+  font-family: var(--font-serif-accent);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.getquote-breadcrumb {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+/* Main Section */
+.getquote-main {
+  background: var(--color-white);
+  padding: 3rem 0 4rem 0;
+  text-align: center;
+}
+.getquote-main__heading {
+  font-family: var(--font-serif-accent);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+.getquote-main__accent {
+  color: var(--color-secondary);
+  animation: accentPulse 1.2s infinite alternate;
+  display: inline-block;
+}
+@keyframes accentPulse {
+  0% { text-shadow: 0 0 0px var(--color-secondary); transform: scale(1);}
+  60% { text-shadow: 0 0 12px var(--color-secondary); transform: scale(1.08);}
+  100% { text-shadow: 0 0 18px var(--color-secondary); transform: scale(1.12);}
+}
+.getquote-main__offer {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+}
+.getquote-main__desc {
+  font-size: 1.08rem;
+  color: #6c7a89;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.getquote-contact {
+  background: #f7fafd;
+  padding: 3rem 0 3rem 0;
+}
+.getquote-contact__container {
+  display: flex;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(10,110,207,0.08);
+  background: #fff;
+  animation: contactFadeIn 1s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+@keyframes contactFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.getquote-contact__info {
+  background: var(--color-primary);
+  color: var(--color-white);
+  flex: 1 1 340px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 16px 0 0 16px;
+  animation: infoSlideIn 1.2s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateX(-40px);
+}
+@keyframes infoSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.getquote-contact__title {
+  font-family: var(--font-serif-accent);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.getquote-contact__accent {
+  color: var(--color-secondary);
+  animation: accentPulse 1.2s infinite alternate;
+}
+.getquote-contact__desc {
+  font-size: 1.08rem;
+  margin-bottom: 2rem;
+  opacity: 0.85;
+}
+.getquote-contact__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.getquote-contact__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  animation: listFadeIn 1.2s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.getquote-contact__list li:nth-child(1) { animation-delay: 0.2s; }
+.getquote-contact__list li:nth-child(2) { animation-delay: 0.4s; }
+.getquote-contact__list li:nth-child(3) { animation-delay: 0.6s; }
+.getquote-contact__list li:nth-child(4) { animation-delay: 0.8s; }
+@keyframes listFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.getquote-contact__icon {
+  background: rgba(255,255,255,0.15);
+  color: var(--color-white);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-top: 2px;
+  box-shadow: 0 2px 8px rgba(10,110,207,0.08);
+  animation: iconPulse 1.2s infinite alternate;
+}
+@keyframes iconPulse {
+  0% { box-shadow: 0 2px 8px rgba(10,110,207,0.08);}
+  100% { box-shadow: 0 4px 16px rgba(10,110,207,0.18);}
+}
+
+/* Form Section */
+.getquote-contact__form {
+  flex: 1 1 420px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  background: #fff;
+  border-radius: 0 16px 16px 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: formSlideIn 1.2s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateX(40px);
+}
+@keyframes formSlideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.getquote-contact__form-title {
+  font-family: var(--font-serif-accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-dark);
+}
+.getquote-contact__form-desc {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+.getquote-contact__form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.getquote-contact__form-row input,
+.getquote-contact__form-row select,
+.getquote-contact__form-row textarea {
+  flex: 1 1 0;
+  padding: 0.7em 1em;
+  font-size: 1rem;
+  border: 1px solid #e6eaf0;
+  border-radius: 8px;
+  background: #f7fafd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+.getquote-contact__form-row input:focus,
+.getquote-contact__form-row select:focus,
+.getquote-contact__form-row textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(10,110,207,0.08);
+}
+.getquote-contact__file-label {
+  font-size: 0.95rem;
+  color: #444;
+  display: block;
+}
+.getquote-contact__form-row input[type="file"] {
+  padding: 0.4em 0;
+  background: none;
+  border: none;
+}
+.getquote-contact__submit {
+  margin-top: 1.5rem;
+  padding: 0.8em 2em;
+  font-size: 1.08rem;
+  border-radius: 30px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(10,110,207,0.08);
+  position: relative;
+  overflow: hidden;
+}
+.getquote-contact__submit i {
+  margin-left: 0.7em;
+  transition: transform 0.2s;
+}
+.getquote-contact__submit:hover i {
+  transform: translateX(4px);
+}
+
+/* Benefits Section */
+.getquote-benefits {
+  background: #fff;
+  padding: 3rem 0 3rem 0;
+}
+.getquote-benefits__container {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.getquote-benefits__left {
+  flex: 1 1 380px;
+  min-width: 320px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.getquote-benefits__title {
+  font-family: var(--font-serif-accent);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+.getquote-benefits__img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(10,110,207,0.10);
+  margin-bottom: 1.2rem;
+  animation: imgFadeIn 1.2s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+@keyframes imgFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.getquote-benefits__right {
+  flex: 1 1 420px;
+  min-width: 320px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.getquote-benefits__desc {
+  font-size: 1.08rem;
+  color: #222;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.getquote-benefits__accordion {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(10,110,207,0.07);
+  border: 1px solid #e6eaf0;
+  overflow: hidden;
+  animation: accordionFadeIn 1.2s cubic-bezier(.77,0,.18,1) forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+@keyframes accordionFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.accordion-item {
+  border-bottom: 1px solid #e6eaf0;
+  transition: background 0.2s;
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+.accordion-title {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.08rem;
+  font-family: var(--font-serif-accent);
+  font-weight: 600;
+  color: var(--color-dark);
+  padding: 1.1rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+}
+.accordion-title::after {
+  content: '\25BC';
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+.accordion-item.active .accordion-title::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f7fafd;
+  color: #444;
+  font-size: 1rem;
+  padding: 0 1.2rem;
+  transition: max-height 0.4s cubic-bezier(.77,0,.18,1), padding 0.3s;
+  opacity: 0.95;
+}
+.accordion-item.active .accordion-content {
+  max-height: 200px;
+  padding: 1rem 1.2rem;
+  transition: max-height 0.4s cubic-bezier(.77,0,.18,1), padding 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .getquote-main__heading {
+    font-size: 1.5rem;
+  }
+  .getquote-contact__container {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+  .getquote-contact__info,
+  .getquote-contact__form {
+    border-radius: 16px;
+    width: 100%;
+    min-width: 0;
+  }
+  .getquote-benefits__container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .getquote-benefits__left,
+  .getquote-benefits__right {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width: 600px) {
+  .getquote-hero__title {
+    font-size: 2rem;
+  }
+  .getquote-main__heading {
+    font-size: 1.8rem;  
+  }
+  .getquote-contact__info,
+  .getquote-contact__form {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+  .getquote-contact__title {
+    font-size: 1.2rem;
+  }
+  .getquote-contact__form-title {
+    font-size: 1rem;
+  }
+  .getquote-contact__form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .getquote-benefits__title {
+    font-size: 1.2rem;
+  }
+  .getquote-benefits__img {
+    max-width: 100vw;
+  }
+  .getquote-benefits__left {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .getquote-benefits__img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .getquote-benefits__left {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .getquote-benefits__img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}

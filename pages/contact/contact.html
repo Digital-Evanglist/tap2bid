@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us • TapToBid</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+ 
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header/Navbar (reuse from home page) -->
+    <header>
+      <nav class="navbar navbar--light">
+        <div class="navbar__inner">
+          <div class="navbar__brand"><a href="../home/home.html">TapToBid</a></div>
+          <button class="navbar__toggle" data-nav-toggle aria-label="Toggle navigation">Menu</button>
+          <ul class="navbar__links">
+            <li class="navbar__link"><a href="../home/home.html#services">Services</a></li>
+            <li class="navbar__link"><a href="../home/home.html#about">About</a></li>
+            <li class="navbar__link"><a href="../home/home.html#projects">Projects</a></li>
+            <li class="navbar__link"><a href="../home/home.html#contact">Contact</a></li>
+            <li class="navbar__link"><a class="btn btn--primary" href="../home/home.html#quote">Get Quote</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Contact Hero Section -->
+      <section class="contact-hero">
+        <div class="contact-hero__bg"></div>
+        <div class="container contact-hero__container">
+          <h1 class="contact-hero__title">Contact Us</h1>
+          <nav class="contact-breadcrumb">
+            <a href="../home/home.html">Home</a> &raquo; <span>Contact Us</span>
+          </nav>
+        </div>
+      </section>
+
+
+
+      <!-- Contact Form Section (Split Layout) -->
+      <section class="contact-estimate-section section">
+        <div class="container contact-estimate__container">
+          <!-- Left: Info -->
+          <div class="contact-estimate__info">
+            <h2 class="contact-estimate__title">Get Estimate</h2>
+            <p class="contact-estimate__subtitle">
+              Have a query or need immediate assistance?<br>
+              Feel free to reach out to us through any of the following channels:
+            </p>
+            <div class="contact-estimate__list">
+              <div class="contact-estimate__item">
+                <span class="contact-estimate__icon"><i class="fa-regular fa-envelope"></i></span>
+                <div>
+                  <span class="contact-estimate__label">EMAIL</span>
+                  <a href="mailto:info@constructestimates.com">info@constructestimates.com</a>
+                </div>
+              </div>
+              <div class="contact-estimate__item">
+                <span class="contact-estimate__icon"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <span class="contact-estimate__label">CALL US</span>
+                  <div>(346) 660-2440<br>0455 843 274</div>
+                </div>
+              </div>
+              <div class="contact-estimate__item">
+                <span class="contact-estimate__icon"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <span class="contact-estimate__label">ADDRESS:</span>
+                  <div>
+                    <span class="contact-estimate__flag">🇺🇸</span>
+                    <b>USA Office:</b><br>
+                    2000 Taylor St, Houston, TX 77007, United States
+                  </div>
+                  <div style="margin-top:0.5em;">
+                    <span class="contact-estimate__flag">🇦🇺</span>
+                    <b>Australia Office:</b><br>
+                    100 Barangaroo, Sydney NSW 2000
+                  </div>
+                </div>
+              </div>
+              <div class="contact-estimate__item">
+                <span class="contact-estimate__icon"><i class="fa-regular fa-clock"></i></span>
+                <div>
+                  <span class="contact-estimate__label">WORKING HOURS:</span>
+                  <div>Mon-Sat: 9 AM – 10 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Form -->
+          <div class="contact-estimate__form">
+            <h2 class="contact-estimate__form-title">Get In Touch</h2>
+            <p class="contact-estimate__form-desc">
+              Fill the below form to resolve any queries or to ask for estimation.
+            </p>
+            <form class="form contact-form" autocomplete="off">
+              <div class="contact-form__row">
+                <div class="form__control">
+                  <label for="name">Your Name*</label>
+                  <input class="input" type="text" id="name" name="name" placeholder="Name" required />
+                </div>
+                <div class="form__control">
+                  <label for="company">Your Company*</label>
+                  <input class="input" type="text" id="company" name="company" placeholder="Company Name here..." required />
+                </div>
+              </div>
+              <div class="contact-form__row">
+                <div class="form__control">
+                  <label for="email">Your Email*</label>
+                  <input class="input" type="email" id="email" name="email" placeholder="Email..." required />
+                </div>
+                <div class="form__control">
+                  <label for="cell">Your Cell*</label>
+                  <input class="input" type="tel" id="cell" name="cell" placeholder="Cell..." required />
+                </div>
+              </div>
+              <div class="form__control">
+                <label for="subject">Subject*</label>
+                <input class="input" type="text" id="subject" name="subject" placeholder="Subject..." required />
+              </div>
+              <div class="form__control">
+                <label for="message">Message</label>
+                <textarea class="textarea" id="message" name="message" rows="4" placeholder="Write Message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary contact-form__submit">
+                Submit <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Intro + Upload Section -->
+      <section class="contact-intro-upload contact-intro-upload--wide">
+        <div class="container contact-intro-upload__container">
+          <div class="contact-intro-upload__content">
+            <h2 class="contact-intro-upload__title">
+              Ready to Get Accurate <span class="contact-intro__accent">Construction Estimates?</span>
+            </h2>
+            <p class="contact-intro-upload__desc">
+              Don’t let uncertainty impact your construction projects. Take the next step towards success by uploading your detailed plans, blueprints, or drawings for a comprehensive analysis of your project costs. Our team will provide you with accurate estimates to help you make informed decisions and stay within budget.
+            </p>
+          </div>
+          <div class="contact-intro-upload__action">
+            <button class="btn btn--primary contact-intro-upload__btn">
+              Upload Plans Here <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+            <span class="contact-intro-upload__arrow"></span>
+          </div>
+          <div class="contact-intro-upload__circle"></div>
+        </div>
+      </section>
+      <div class="contact-intro-upload__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.239839985956!2d151.201927075753!3d-33.86360001955709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3f1e6e7e6d%3A0x7b7e7e7e7e7e7e7e!2sThree%20International%20Towers%2C%20100%20Barangaroo%20Ave%2C%20Sydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sin!4v1692870000000!5m2!1sen!2sin"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!-- Discuss Section -->
+      <section class="contact-discuss-section">
+        <div class="contact-discuss__container">
+          <div class="contact-discuss__content">
+            <h2 class="contact-discuss__title">
+              Let's Discuss Your Construction<br>Estimating Needs
+            </h2>
+            <p class="contact-discuss__desc">
+              Discover the TapToBid advantage! Take the next step toward accurate estimates and successful projects. <br>
+              Connect with our expert team for tailored solutions, guidance, and a special 30% discount on your first quote. We’re here to answer your questions and help you build with confidence.
+            </p>
+            <button class="btn btn--light contact-discuss__btn">
+              Request Your Discounted Estimate &amp; Save 30% <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div class="contact-discuss__decor">
+            <span class="contact-discuss__arrow"></span>
+            <span class="contact-discuss__circle"></span>
+            <div class="contact-discuss__wave"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (reuse from home page) -->
+    <footer class="site-footer">
+      <div class="footer-bg-graphic"></div>
+      <div class="container site-footer__container">
+        <div class="site-footer__brand">
+          <img src="../../assets/img/logo-blue.svg" alt="TapToBid Logo" class="site-footer__logo" />
+          <div>
+            <span class="site-footer__brand-title">TapToBid</span>
+            <span class="site-footer__brand-sub">Estimates</span>
+          </div>
+        </div>
+        <p class="site-footer__desc">
+          Essential for precise budgeting and efficient resource allocation in construction projects.
+        </p>
+        <nav class="site-footer__nav">
+          <a href="../home/home.html">Home</a>
+          <a href="../about/about.html">About Us</a>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../privacy/privacy.html">Privacy Policy</a>
+        </nav>
+        <div class="site-footer__social">
+          <a href="#" aria-label="LinkedIn" class="footer-social__icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook" class="footer-social__icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇺🇸</span>
+            <span>2000 Taylor St, Houston, TX 77007, United States</span>
+          </div>
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇦🇺</span>
+            <span>118 Royal Terrace, Craigieburn VIC 3064</span>
+          </div>
+          <div class="footer-contact">
+            <span class="footer-contact__flag">🇨🇦</span>
+            <span>2 Simcoe St S #300, Oshawa, ON L1H 8C1, Canada</span>
+          </div>
+        </div>
+        <div class="site-footer__phones">
+          <span><i class="fa-solid fa-phone"></i> (346) 660-2440</span>
+          <span><i class="fa-solid fa-phone"></i> 0455 843 274</span>
+          <span><i class="fa-solid fa-phone"></i> (365) 607-7238</span>
+        </div>
+        <div class="site-footer__copyright">
+          <span>© <span data-current-year></span>. All rights reserved – TapToBid</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Animate year
+      document.querySelectorAll('[data-current-year]').forEach(el => {
+        el.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

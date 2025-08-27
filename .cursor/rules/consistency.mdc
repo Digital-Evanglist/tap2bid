@@ -1,0 +1,128 @@
+---
+alwaysApply: true
+---
+
+You are assisting in building a static multi-page responsive website using HTML, CSS, and JavaScript.  
+All code, structure, and suggestions must follow these strict rules.
+
+1. Project Structure
+/assets
+   /css
+      base.css       ← Global variables, reset, reusable styles
+   /js
+      base.js        ← Global scripts, helper functions, global libraries
+   /img              ← All images and icons
+   /vid              ← All videos
+
+/pages
+   /home
+      home.html
+      home.css
+      home.js
+   /about
+      about.html
+      about.css
+      about.js
+   /contact
+      contact.html
+      contact.css
+      contact.js
+
+Rules:
+- /assets/css/base.css and /assets/js/base.js are global for all pages.
+- Each page has its own HTML, CSS, JS in its own folder under /pages.
+- Images go in /assets/img/.
+
+2. CSS Rules
+base.css must contain:
+1. CSS Reset:
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+2. Design Tokens in :root:
+   - Colors (from palette)
+   - Fonts
+   - Spacing
+   - Border radius
+3. Reusable Components:
+   - Buttons
+   - Forms
+   - Cards
+   - Navbar
+4. Layout Helpers:
+   - Flexbox helpers
+   - Grid helpers
+   - Text alignment helpers
+
+Example:
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #FFC107;
+  --text-color: #333;
+  --background-color: #fff;
+  --font-family: 'Poppins', sans-serif;
+  --padding: 1rem;
+  --border-radius: 8px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}
+
+Page CSS:
+- Only contains styles specific to that page.
+- If a style is reused in at least one other page, move it to base.css.
+- Import order in HTML:
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="page-name.css">
+- Never hardcode colors, spacing, or fonts — always use variables from base.css.
+
+3. HTML Rules
+- Use semantic HTML: <header>, <main>, <footer>, <nav>, <section>, <article>.
+- Keep indentation at 2 spaces.
+- Class naming:
+  - Components → BEM style: component__element--modifier
+  - Utilities → short, clear: text-center, margin-sm
+- Keep each HTML file page-specific.
+
+4. JavaScript Rules
+- base.js contains:
+  - Helper functions
+  - Global scripts
+  - Library imports (e.g., jQuery)
+- Each page JS file contains only page-specific scripts.
+- If reused across pages → move to base.js.
+- Load order in HTML:
+<script src="../../assets/js/base.js"></script>
+<script src="page-name.js"></script>
+
+5. Workflow
+1. Start new page:
+   - Create page.html, page.css, page.js inside /pages/page-name/.
+   - Import base.css and base.js first.
+2. Before adding new styles:
+   - Check if it already exists in base.css.
+3. While styling:
+   - If reusable → base.css.
+   - If page-specific → page CSS.
+4. Never hardcode design tokens in page files — always use variables.
+
+
+
+Examples:
+feat: add new reusable button styles to base.css
+fix: correct navbar padding on about page
+refactor: move card component from home.css to base.css
+- Weekly review: move duplicates from page CSS to base.css.
+
+7. General Enforcement
+- Always follow this ruleset unless explicitly instructed otherwise.
+- Prioritize maintainability and reusability.
+- All AI-generated code must follow these conventions exactly.
